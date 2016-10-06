@@ -1,0 +1,10 @@
+<div>
+	<h1>Twilio SMS</h1>
+<div>
+<div>
+	<%= form_for @phone, url: '/message' do |f|%>
+	<%=f.label :number%>
+	<%= f.telephone_field :number%> <br>
+	<%= f.submit 'Send SMS'%>
+	<% end%>
+</div>

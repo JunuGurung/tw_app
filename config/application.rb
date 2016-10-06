@@ -1,5 +1,5 @@
 require_relative 'boot'
-
+require_relative '../lib/tasks/messenger.rb'
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems

@@ -1,0 +1,12 @@
+<div>
+	<h1>Twilio SMS</h1>
+	<p><%= link_to "Home",home_path%></p>
+<div>
+<div>
+	<%= form_for @phone, url: '/apps/texty/send_text' do |f|%>
+	<%= f.label :number%>
+	<%= f.text_field :number %>
+	<%= f.submit 'Send SMS'%>
+	<% end%>
+	
+</div>
